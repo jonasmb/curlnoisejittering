@@ -12,9 +12,11 @@ Siggraph Asia 2023 Conference Track
 
 ---
 
+Note that this repository contains only the Python code used for the direct method and comparisons with other methods. There is also a ShaderToy example which produces images qualitatively identical to Figure 5 using our implicit method. This example is available [here](https://www.shadertoy.com/view/Dd3yW4).
+
 ## Dependencies
 
-- Anaconda
+- Anaconda or Miniconda
 - CMake
 - libcairo (https://www.cairographics.org)
 
