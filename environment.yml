@@ -1,0 +1,8 @@
+name: cnj
+channels:
+ - defaults
+dependencies:
+ - numpy
+ - matplotlib
+ - numba
+ - scipy

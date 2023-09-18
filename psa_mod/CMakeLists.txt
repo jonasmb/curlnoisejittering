@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(psa)
+add_executable (psabin src/main.cpp src/analysis.cpp src/config.cpp src/curve.cpp src/delaunay.cpp src/image.cpp src/param.cpp src/periodogram.cpp src/point.cpp src/result.cpp src/spectrum.cpp src/statistics.cpp)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(PKG_CAIRO REQUIRED IMPORTED_TARGET cairo)
+target_link_libraries(psabin PUBLIC PkgConfig::PKG_CAIRO)
