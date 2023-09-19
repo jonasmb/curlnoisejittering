@@ -17,7 +17,7 @@ A ShaderToy producing images qualitatively identical to Figure 5 using our impli
 
 ## Dependencies
 
-- Anaconda or Miniconda (https://anaconda.org)
+- Anaconda, Miniconda (https://anaconda.org), or Pip (https://pypi.org/project/pip/)
 - CMake (https://cmake.org)
 - libcairo (https://www.cairographics.org)
 - pkg-config (https://www.freedesktop.org/wiki/Software/pkg-config/)
@@ -30,12 +30,19 @@ conda activate cnj
 ./build_external.sh
 ```
 
+## Installation using Pip
+
+```
+pip install --user numpy matplotlib numba scipy
+./build_external.sh
+```
+
 # Usage 
 
 To generate the results of Figure 4 in the paper, run the command:
 
 ```
-python points.py
+python3 points.py
 ```
 
 If everything goes well, an output figure_4.pdf will be generated.
