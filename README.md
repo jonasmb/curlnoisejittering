@@ -25,7 +25,7 @@ Note that this repository specifically contains the Python code used for the 2D 
 ```
 conda env create -f environment.yml
 conda activate cnj
-source build_external.sh
+./build_external.sh
 ```
 
 # Usage 
