@@ -12,12 +12,13 @@ Siggraph Asia 2023 Conference Track
 
 ---
 
-Note that this repository specifically contains the Python code used for the 2D direct method and comparisons with other methods. There is also a ShaderToy example which produces images qualitatively identical to Figure 5 using our implicit method. This example is available [here](https://www.shadertoy.com/view/Dd3yW4).
+This repository specifically contains the Python code used for the 2D direct method and comparisons with other methods.
+A ShaderToy producing images qualitatively identical to Figure 5 using our implicit method is available [here](https://www.shadertoy.com/view/Dd3yW4).
 
 ## Dependencies
 
-- Anaconda or Miniconda
-- CMake
+- Anaconda or Miniconda (https://anaconda.org)
+- CMake (https://cmake.org)
 - libcairo (https://www.cairographics.org)
 - pkg-config (https://www.freedesktop.org/wiki/Software/pkg-config/)
 
@@ -31,13 +32,13 @@ conda activate cnj
 
 # Usage 
 
-To generate the results of Figure 4 in the paper run the command:
+To generate the results of Figure 4 in the paper, run the command:
 
 ```
 python points.py
 ```
 
-If everything goes well an output figure_4.pdf will be generated.
+If everything goes well, an output figure_4.pdf will be generated.
 
 # External libraries
 
