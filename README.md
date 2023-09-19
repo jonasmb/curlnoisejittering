@@ -33,7 +33,7 @@ conda activate cnj
 ## Installation using Pip
 
 ```
-pip install --user numpy matplotlib numba scipy
+python3 -m pip install --user numpy matplotlib numba scipy
 ./build_external.sh
 ```
 
