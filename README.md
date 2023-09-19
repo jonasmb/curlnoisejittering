@@ -19,6 +19,7 @@ Note that this repository specifically contains the Python code used for the 2D 
 - Anaconda or Miniconda
 - CMake
 - libcairo (https://www.cairographics.org)
+- pkg-config (https://www.freedesktop.org/wiki/Software/pkg-config/)
 
 ## Installation using Anaconda
 
@@ -44,6 +45,6 @@ This repository includes code from:
 
 * Capacity Constrained Voronoi Diagrams https://github.com/michaelbalzer/ccvt (subfolder ccvt_mod)
 
-*  psa - Point Set Analysis https://github.com/nodag/psa/tree/master (subfolder psa_mod)
+* psa - Point Set Analysis https://github.com/nodag/psa/tree/master (subfolder psa_mod)
 
 * Optimizing dyadic nets http://abdallagafar.com/publications/dyadic-nets/files/dyadic-nets-code.zip (subfolder dyadic_mod)
