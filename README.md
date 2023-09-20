@@ -12,8 +12,8 @@ Siggraph Asia 2023 Conference Track
 
 ---
 
-This repository specifically contains the Python code used for the 2D direct method and comparisons with other methods.
-A ShaderToy producing images qualitatively identical to Figure 5 using our implicit method is available [here](https://www.shadertoy.com/view/Dd3yW4).
+This repository contains the Python code used for the 2D direct method and comparisons with other methods. The comparisons are shown in Figure 4.
+A ShaderToy demo able to produce the images in Figure 5 of the paper (using our implicit method) is available [here](https://www.shadertoy.com/view/Dd3yW4).
 
 ## Dependencies
 
