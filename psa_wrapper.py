@@ -24,7 +24,7 @@ def psa_wrapper(samples, temp_post_fix = "", points_id=0):
     if not os.path.exists(temp_path):
         os.makedirs(temp_path)
     print(os.path.curdir, os.path.exists(psabin_path))
-    assert os.path.exists(psabin_path)
+    assert os.path.exists(psabin_path) or os.path.exists(psabin_path + '.exe')
     points_name = 'points' + str(points_id) + '_'
     points_path = os.path.join(temp_path, points_name)
     for i in range(len(samples)):

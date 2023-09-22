@@ -19,10 +19,13 @@
 #include <time.h>
 #include <string>
 #include <cstring>
-#include <getopt.h>
 #include <signal.h>
 #include <algorithm>
 #include <stdint.h>
+
+extern "C" {
+#include "getopt.h"
+}
 
 struct Point {
     int x, y;
@@ -559,7 +562,7 @@ const char *USAGE_MESSAGE = "Usage: %s [options] <point count>\n"
 
 int main(int argc,char **argv) {
     srand(time(NULL));
-    srand48(time(NULL));
+    //srand48(time(NULL));
     int opt;                                                                    // For use by getopt, the command line options utility
     int iterations = 0;
     double sigma = 0.4;

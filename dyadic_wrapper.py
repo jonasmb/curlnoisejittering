@@ -4,7 +4,7 @@ import numpy
 
 def dyadic_wrapper(power_of_two_num_points, sigma, opt_steps=1000):
     dyadicbin_path = os.path.join(os.path.dirname(__file__), 'dyadic_mod/build/net-optimize-pointers')
-    os.path.exists(dyadicbin_path)
+    assert os.path.exists(dyadicbin_path) or os.path.exists(dyadicbin_path + '.exe')
     tempfile_sites = 'net.txt'
     if os.path.exists(tempfile_sites):
         os.remove(tempfile_sites)

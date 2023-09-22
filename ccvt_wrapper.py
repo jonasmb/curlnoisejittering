@@ -6,7 +6,7 @@ def ccvt_wrapper(num_points, random_seed=42):
     ccvtbin_path = os.path.join(os.path.dirname(__file__), 'ccvt_mod/build/ccvt')
     tempfile_sites = 'sites.txt'
     print(os.path.curdir,  os.path.exists(ccvtbin_path))
-    assert os.path.exists(ccvtbin_path)
+    assert os.path.exists(ccvtbin_path) or os.path.exists(ccvtbin_path + '.exe')
     if os.path.exists(tempfile_sites):
         os.remove(tempfile_sites)
     cmd_str = ccvtbin_path + " " + str(num_points) + " " + str(random_seed)

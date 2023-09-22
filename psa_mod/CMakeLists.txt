@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(psa)
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${OUTPUT_DIRECTORY}")
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
 add_executable (psabin src/main.cpp src/analysis.cpp src/config.cpp src/curve.cpp src/delaunay.cpp src/image.cpp src/param.cpp src/periodogram.cpp src/point.cpp src/result.cpp src/spectrum.cpp src/statistics.cpp)
 target_link_libraries(psabin PUBLIC)
