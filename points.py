@@ -30,7 +30,7 @@ def Fourier_spectrum(P, sz=2048):
 		I[i,j] = 1
 	ft = np.fft.fft2(I)
 	ft = np.fft.fftshift(ft)
-	ft_mag = np.clip(np.abs(ft), 0.0, 75)
+	ft_mag = np.clip(np.abs(ft)**2, 0.0, 5000)
 	return ft_mag
 
 def psa_point_stats(P):
