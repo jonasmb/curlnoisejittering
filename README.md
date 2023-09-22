@@ -28,6 +28,8 @@ conda activate cnj
 ./build_external.sh
 ```
 
+On Windows, run build_external.sh in the Developer PowerShell and the rest in the Anaconda Prompt.
+
 ## Installation using Pip
 
 ```
