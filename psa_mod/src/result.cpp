@@ -25,10 +25,10 @@
 #include <iomanip>
 #include <sstream>
 #include <fstream>
-#include <cairo/cairo-pdf.h>
+//#include <cairo/cairo-pdf.h>
 
 
-void SaveSummary(const std::string &fname, Result &result, Config &config)
+/*void SaveSummary(const std::string &fname, Result &result, Config &config)
 {
     const float fnorm = 2.f / sqrtf(result.npoints);
     const float rnorm = 1.f / sqrtf(2.f / (SQRT3 * result.npoints));
@@ -202,7 +202,7 @@ void SaveSummary(const std::string &fname, Result &result, Config &config)
     if (imgdata) delete[] imgdata;
     cairo_destroy(cr);
     cairo_surface_destroy(surface);
-}
+}*/
 
 void WriteResult(const std::string &base, Result &result, Config &config,
                  ParamList &params)
@@ -284,7 +284,7 @@ void WriteResult(const std::string &base, Result &result, Config &config,
                                (result.nsets > 1 ? -result.nsets : 0), fnorm);
     }
     // 2D
-    if (params.GetBool("pspectrum"))
-        result.spectrum.Save(base+"_spec.png");
+    //if (params.GetBool("pspectrum"))
+    //    result.spectrum.Save(base+"_spec.png");
 }
 

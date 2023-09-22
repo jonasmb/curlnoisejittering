@@ -19,8 +19,6 @@ A ShaderToy demo able to produce the images in Figure 5 of the paper (using our 
 
 - Anaconda, Miniconda (https://anaconda.org), or Pip (https://pypi.org/project/pip/)
 - CMake (https://cmake.org)
-- libcairo (https://www.cairographics.org)
-- pkg-config (https://www.freedesktop.org/wiki/Software/pkg-config/)
 
 ## Installation using Anaconda
 

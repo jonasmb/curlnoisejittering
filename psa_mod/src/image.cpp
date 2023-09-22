@@ -22,7 +22,7 @@
 #include "image.h"
 #include "util.h"
 #include <cassert>
-#include <cairo/cairo.h>
+//#include <cairo/cairo.h>
 
 void Image::reallocate(int w, int h)
 {
@@ -101,7 +101,7 @@ void Image::ToneMap(bool square_root, float scale)
     }
 }
 
-void Image::Save(const std::string &fname, bool flipped)
+/*void Image::Save(const std::string &fname, bool flipped)
 {
     unsigned char *data = NULL;
     this->GetRGBA(data, flipped);
@@ -112,5 +112,5 @@ void Image::Save(const std::string &fname, bool flipped)
     cairo_surface_write_to_png(surface, fname.c_str());
     cairo_surface_destroy(surface);
     delete[] data;
-}
+}*/
 

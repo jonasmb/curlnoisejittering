@@ -112,9 +112,9 @@ void Analysis(std::vector<std::string> &files, ParamList &params,
 
         // Output
         std::string base = BaseName(files[i], true);
-        if (summary)
-            SaveSummary(base+".pdf", r, config);
-        else
+        //if (summary)
+        //    SaveSummary(base+".pdf", r, config);
+        //else
             WriteResult(base, r, config, params);
     }
 }
@@ -203,9 +203,9 @@ void AnalysisAverage(std::vector<std::string> &files, ParamList &params,
 
     // Output
     std::string base = "avg";
-    if (summary)
-        SaveSummary(base+".pdf", r, config);
-    else
+    //if (summary)
+    //    SaveSummary(base+".pdf", r, config);
+    //else
         WriteResult(base, r, config, params);
 }
 

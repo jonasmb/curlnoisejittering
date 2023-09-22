@@ -38,7 +38,7 @@ def psa_wrapper(samples, temp_post_fix = "", points_id=0):
     flags = ' '
     if average:
         flags +='--avg'
-    flags += ' --raw --ani --rp --rdf --pspectrum --spectral '
+    flags += ' --raw --ani --rp --rdf --spectral '
     if average:
         path_ani = os.path.join(os.path.dirname(__file__), 'avg_ani.txt')
     else:
@@ -84,7 +84,7 @@ def psa_wrapper(samples, temp_post_fix = "", points_id=0):
     os.remove(path_rp)
     os.remove(path_spectral)
     if not average:
-        os.remove(os.path.join(os.path.dirname(__file__), points_name + '0_spec.png'))
+        #os.remove(os.path.join(os.path.dirname(__file__), points_name + '0_spec.png'))
         os.remove(points_path + '0.txt')
     return (
         effnyquist,
