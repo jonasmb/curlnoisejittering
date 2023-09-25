@@ -28,7 +28,7 @@ conda activate cnj
 ./build_external.sh
 ```
 
-On Windows, run build_external.sh in the Developer PowerShell and the rest in the Anaconda Prompt.
+On Windows, run .sh files in the Developer PowerShell for Visual Studio and the rest in the Anaconda Prompt.
 
 ## Installation using Pip
 
