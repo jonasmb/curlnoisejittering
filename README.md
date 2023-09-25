@@ -18,6 +18,8 @@ A ShaderToy demo able to produce the images in Figure 5 of the paper (using our 
 
 # Description
 
+![][curl_noise_jittering.jpg]
+
 We propose a method for implicitly generating blue noise point sets. Our method is based on the observations that curl noise vector fields are volume-preserving and that jittering can be construed as moving points along the streamlines of a vector field. We demonstrate that the volume preservation keeps the points well separated when jittered using a curl noise vector field. At the same time, the anisotropy that stems from regular lattices is significantly reduced by such jittering. In combination, these properties entail that jittering by curl noise effectively transforms a regular lattice into a point set with blue noise properties. Our implicit method does not require computing the point set in advance. This makes our technique valuable when an arbitrarily large set of points with blue noise properties is needed.
 
 
