@@ -15,6 +15,8 @@ This repository contains the code associated with the article:
 
 This repository contains the Python code used for the 2D direct method and comparisons with other methods. The comparisons are shown in Figure 4.
 
+The article can be downloaded from [here](https://hal.science/hal-04227903).
+
 A ShaderToy demo able to produce the images in Figure 5 of the paper (using our implicit method) is available [here](https://www.shadertoy.com/view/Dd3yW4).
 
 A video showcasing the method can be found [here](https://youtu.be/raY0pwL21pw).
